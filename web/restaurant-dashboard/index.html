@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFlow Pro - Restaurant Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0F172A;
+            --bg-secondary: #1E293B;
+            --accent: #6366F1;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 48px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 32px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--success);
+            color: black;
+            border-radius: 100px;
+            font-weight: 600;
+        }
+
+        .status-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            padding: 24px;
+            border-radius: 16px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .stat-value.accent { color: var(--accent); }
+        .stat-value.success { color: var(--success); }
+        .stat-value.warning { color: var(--warning); }
+
+        /* Orders Table */
+        .orders-section {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 24px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .order-card {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 16px;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .order-card:hover {
+            transform: translateX(8px);
+        }
+
+        .order-id {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .order-items {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .order-status {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .order-status.new {
+            background: var(--warning);
+            color: black;
+        }
+
+        .order-status.preparing {
+            background: var(--accent);
+            color: white;
+        }
+
+        .order-status.ready {
+            background: var(--success);
+            color: black;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-primary {
+            background: var(--success);
+            color: black;
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: white;
+            border: 1px solid var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">🍔 FoodFlow</div>
+            <nav>
+                <a href="#" class="nav-item active">
+                    <span>📋</span> Commandes
+                </a>
+                <a href="#" class="nav-item">
+                    <span>🍽️</span> Menu
+                </a>
+                <a href="#" class="nav-item">
+                    <span>📊</span> Statistiques
+                </a>
+                <a href="#" class="nav-item">
+                    <span>⚙️</span> Paramètres
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <header class="header">
+                <h1>Burger King - Rivoli</h1>
+                <div class="status-badge">Restaurant Ouvert</div>
+            </header>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Commandes aujourd'hui</div>
+                    <div class="stat-value accent">47</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Chiffre d'affaires</div>
+                    <div class="stat-value success">1,247 €</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">En préparation</div>
+                    <div class="stat-value warning">3</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Temps moyen</div>
+                    <div class="stat-value">12 min</div>
+                </div>
+            </div>
+
+            <!-- Orders -->
+            <section class="orders-section">
+                <div class="section-header">
+                    <h2 class="section-title">Commandes en cours</h2>
+                </div>
+
+                <div class="order-card">
+                    <div>
+                        <div class="order-id">#FF-7823</div>
+                        <div class="order-items">2x Double Whopper, 1x Frites Large</div>
+                    </div>
+                    <div class="order-status new">Nouvelle</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Accepter</button>
+                        <button class="btn btn-secondary">Détails</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div>
+                        <div class="order-id">#FF-7822</div>
+                        <div class="order-items">1x Menu Big King XXL</div>
+                    </div>
+                    <div class="order-status preparing">En préparation</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Prêt !</button>
+                    </div>
+                </div>
+
+                <div class="order-card">
+                    <div>
+                        <div class="order-id">#FF-7821</div>
+                        <div class="order-items">3x Chicken Nuggets (6pcs)</div>
+                    </div>
+                    <div class="order-status ready">Prêt</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary">En attente livreur</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Real-time order simulation
+        console.log('🍔 FoodFlow Restaurant Dashboard loaded');
+        
+        // In production: Connect to Firestore realtime listener
+        // firebase.firestore().collection('orders')
+        //   .where('restaurant_id', '==', RESTAURANT_ID)
+        //   .where('status', 'in', ['CONFIRMED', 'PREPARING', 'READY'])
+        //   .onSnapshot(snapshot => { ... });
+    </script>
+</body>
+</html>

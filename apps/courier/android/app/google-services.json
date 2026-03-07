@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353828433773",
+    "project_id": "foodflow-5c2cb",
+    "storage_bucket": "foodflow-5c2cb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353828433773:android:e09af6a9e1b64875163464",
+        "android_client_info": {
+          "package_name": "com.example.courier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353828433773:android:2f4291027c7839d9163464",
+        "android_client_info": {
+          "package_name": "com.foodflow.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

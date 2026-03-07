@@ -1,0 +1,12 @@
+# Monorepo Root Ignores
+node_modules/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary setup scripts and logs
+setup.log
+setup2.log
+setup.bat

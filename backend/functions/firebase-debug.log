@@ -1,0 +1,396 @@
+[debug] [2026-02-09T05:18:35.622Z] ----------------------------------------------------------------------
+[debug] [2026-02-09T05:18:35.628Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-02-09T05:18:35.629Z] CLI Version:   15.5.1
+[debug] [2026-02-09T05:18:35.629Z] Platform:      win32
+[debug] [2026-02-09T05:18:35.629Z] Node Version:  v24.13.0
+[debug] [2026-02-09T05:18:35.629Z] Time:          Mon Feb 09 2026 05:18:35 GMT+0000 (temps universel coordonné)
+[debug] [2026-02-09T05:18:35.630Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-09T05:18:38.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-09T05:18:38.197Z] > authorizing via signed-in user (ilyf44118@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2026-02-09T05:18:38.216Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-09T05:18:38.216Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-02-09T05:18:38.228Z] Write emulator hub locator at C:\Users\elhad\AppData\Local\Temp\hub-foodflow-5c2cb.json
+[debug] [2026-02-09T05:18:38.252Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-09T05:18:38.252Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-09T05:18:38.252Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-02-09T05:18:38.252Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2026-02-09T05:18:39.344Z] defaultcredentials: writing to file C:\Users\elhad\AppData\Roaming\firebase\ilyf44118_gmail_com_application_default_credentials.json
+[debug] [2026-02-09T05:18:39.348Z] Setting GAC to C:\Users\elhad\AppData\Roaming\firebase\ilyf44118_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\elhad\\AppData\\Roaming\\firebase\\ilyf44118_gmail_com_application_default_credentials.json"}}
+[debug] [2026-02-09T05:18:39.350Z] Checked if tokens are valid: true, expires at: 1770615715397
+[debug] [2026-02-09T05:18:39.350Z] Checked if tokens are valid: true, expires at: 1770615715397
+[debug] [2026-02-09T05:18:39.353Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/foodflow-5c2cb/adminSdkConfig [none]
+[debug] [2026-02-09T05:18:39.733Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/foodflow-5c2cb/adminSdkConfig 200
+[debug] [2026-02-09T05:18:39.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/foodflow-5c2cb/adminSdkConfig {"projectId":"foodflow-5c2cb","storageBucket":"foodflow-5c2cb.firebasestorage.app"}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2026-02-09T05:18:39.787Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2026-02-09T05:18:39.906Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2026-02-09T05:18:39.906Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2026-02-09T05:18:40.115Z] Data is 3538469
+[debug] [2026-02-09T05:18:40.116Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.116Z] [unzip] Processing entry: client\
+[debug] [2026-02-09T05:18:40.116Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2026-02-09T05:18:40.118Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2026-02-09T05:18:40.119Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2026-02-09T05:18:40.119Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.120Z] [unzip] Writing file: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2026-02-09T05:18:40.123Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2026-02-09T05:18:40.123Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2026-02-09T05:18:40.123Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.124Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2026-02-09T05:18:40.132Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2026-02-09T05:18:40.133Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2026-02-09T05:18:40.133Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.134Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2026-02-09T05:18:40.137Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2026-02-09T05:18:40.137Z] [unzip] Processing entry: client\index.html
+[debug] [2026-02-09T05:18:40.137Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.138Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2026-02-09T05:18:40.142Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2026-02-09T05:18:40.142Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2026-02-09T05:18:40.142Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.144Z] [unzip] Writing file: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2026-02-09T05:18:40.146Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2026-02-09T05:18:40.146Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2026-02-09T05:18:40.146Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.147Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2026-02-09T05:18:40.150Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2026-02-09T05:18:40.150Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2026-02-09T05:18:40.150Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.151Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2026-02-09T05:18:40.154Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2026-02-09T05:18:40.154Z] [unzip] Processing entry: client\manifest.json
+[debug] [2026-02-09T05:18:40.154Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.155Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2026-02-09T05:18:40.157Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2026-02-09T05:18:40.158Z] [unzip] Processing entry: client\robots.txt
+[debug] [2026-02-09T05:18:40.158Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.159Z] [unzip] Writing file: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2026-02-09T05:18:40.162Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2026-02-09T05:18:40.162Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2026-02-09T05:18:40.162Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.163Z] [unzip] Writing file: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2026-02-09T05:18:40.165Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.165Z] [unzip] Processing entry: client\assets\
+[debug] [2026-02-09T05:18:40.165Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2026-02-09T05:18:40.166Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2026-02-09T05:18:40.167Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2026-02-09T05:18:40.167Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-02-09T05:18:40.167Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2026-02-09T05:18:40.205Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2026-02-09T05:18:40.205Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2026-02-09T05:18:40.206Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-02-09T05:18:40.206Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2026-02-09T05:18:40.215Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2026-02-09T05:18:40.215Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2026-02-09T05:18:40.215Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-02-09T05:18:40.216Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2026-02-09T05:18:40.361Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.361Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2026-02-09T05:18:40.361Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2026-02-09T05:18:40.362Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2026-02-09T05:18:40.363Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2026-02-09T05:18:40.363Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2026-02-09T05:18:40.364Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2026-02-09T05:18:40.367Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.367Z] [unzip] Processing entry: client\assets\img\
+[debug] [2026-02-09T05:18:40.367Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2026-02-09T05:18:40.370Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2026-02-09T05:18:40.371Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2026-02-09T05:18:40.371Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2026-02-09T05:18:40.372Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2026-02-09T05:18:40.375Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.375Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2026-02-09T05:18:40.375Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2026-02-09T05:18:40.385Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2026-02-09T05:18:40.386Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2026-02-09T05:18:40.387Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.388Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2026-02-09T05:18:40.390Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2026-02-09T05:18:40.390Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2026-02-09T05:18:40.391Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.392Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2026-02-09T05:18:40.395Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2026-02-09T05:18:40.395Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2026-02-09T05:18:40.395Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.396Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2026-02-09T05:18:40.399Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2026-02-09T05:18:40.399Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2026-02-09T05:18:40.399Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.400Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2026-02-09T05:18:40.402Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2026-02-09T05:18:40.402Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2026-02-09T05:18:40.403Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.403Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2026-02-09T05:18:40.406Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2026-02-09T05:18:40.406Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2026-02-09T05:18:40.406Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.407Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2026-02-09T05:18:40.410Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2026-02-09T05:18:40.411Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2026-02-09T05:18:40.411Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.411Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2026-02-09T05:18:40.414Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2026-02-09T05:18:40.415Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2026-02-09T05:18:40.415Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.416Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2026-02-09T05:18:40.419Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2026-02-09T05:18:40.419Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2026-02-09T05:18:40.419Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.420Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2026-02-09T05:18:40.422Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2026-02-09T05:18:40.422Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2026-02-09T05:18:40.423Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.423Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2026-02-09T05:18:40.427Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2026-02-09T05:18:40.428Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2026-02-09T05:18:40.428Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.429Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2026-02-09T05:18:40.431Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2026-02-09T05:18:40.432Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2026-02-09T05:18:40.432Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.433Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2026-02-09T05:18:40.435Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2026-02-09T05:18:40.435Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2026-02-09T05:18:40.436Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-02-09T05:18:40.436Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2026-02-09T05:18:40.439Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2026-02-09T05:18:40.439Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2026-02-09T05:18:40.439Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.439Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2026-02-09T05:18:40.443Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2026-02-09T05:18:40.443Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2026-02-09T05:18:40.443Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-02-09T05:18:40.444Z] [unzip] Writing file: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2026-02-09T05:18:40.446Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-02-09T05:18:40.446Z] [unzip] Processing entry: server\
+[debug] [2026-02-09T05:18:40.446Z] [unzip] mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2026-02-09T05:18:40.447Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2026-02-09T05:18:40.447Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2026-02-09T05:18:40.447Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2026-02-09T05:18:40.447Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2026-02-09T05:18:40.461Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2026-02-09T05:18:40.462Z] [unzip] Processing entry: server\server.mjs
+[debug] [2026-02-09T05:18:40.462Z] [unzip] else mkdir: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2026-02-09T05:18:40.463Z] [unzip] deflating: C:\Users\elhad\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[info] i  functions: Watching "C:\Projet\Uber-eats\backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Projet\\Uber-eats\\backend\\functions\" for Cloud Functions..."}}
+[debug] [2026-02-09T05:18:40.500Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-02-09T05:18:47.348Z] > [functions] package.json contents: {
+  "name": "foodflow-functions",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.0",
+    "stripe": "^20.3.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2026-02-09T05:18:47.349Z] Building nodejs source
+[debug] [2026-02-09T05:18:47.349Z] Failed to find version of module node: reached end of search path C:\Projet\Uber-eats\backend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "24". Using node@24 from host. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-02-09T05:18:47.357Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-02-09T05:18:47.374Z] Found firebase-functions binary at 'C:\Projet\Uber-eats\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8339
+
+[error] FirebaseAppError: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+    at AppStore.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\lifecycle.js:41:23)
+    at FirebaseNamespaceInternals.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:43:35)
+    at FirebaseNamespace.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:246:30)
+    at Object.<anonymous> (C:\Projet\Uber-eats\backend\functions\lib\concurrency_controller.js:8:7)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+  errorInfo: {
+    code: 'app/duplicate-app',
+    message: 'The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.'
+  },
+  codePrefix: 'app'
+}
+
+[debug] [2026-02-09T05:18:51.055Z] Got response code 400; body Failed to generate manifest from function source: Error: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2026-02-09T05:18:55.111Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-02-09T05:35:16.597Z] File C:\Projet\Uber-eats\backend\functions\firebase.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projet\\Uber-eats\\backend\\functions\\firebase.json changed, reloading triggers"}}
+[debug] [2026-02-09T05:35:18.417Z] Validating nodejs source
+[debug] [2026-02-09T05:35:29.081Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1120:20)
+    at Object.spawnSync (node:child_process:911:24)
+    at spawn.spawnSync [as sync] (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:88:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:321:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\elhad\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:367:34)
+[debug] [2026-02-09T05:35:29.140Z] > [functions] package.json contents: {
+  "name": "foodflow-functions",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.0",
+    "stripe": "^20.3.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2026-02-09T05:35:29.147Z] Building nodejs source
+[debug] [2026-02-09T05:35:29.151Z] Failed to find version of module node: reached end of search path C:\Projet\Uber-eats\backend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "24". Using node@24 from host. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-02-09T05:35:29.416Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-02-09T05:35:29.602Z] Found firebase-functions binary at 'C:\Projet\Uber-eats\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8242
+
+[error] FirebaseAppError: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+    at AppStore.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\lifecycle.js:41:23)
+    at FirebaseNamespaceInternals.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:43:35)
+    at FirebaseNamespace.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:246:30)
+    at Object.<anonymous> (C:\Projet\Uber-eats\backend\functions\lib\concurrency_controller.js:8:7)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+  errorInfo: {
+    code: 'app/duplicate-app',
+    message: 'The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.'
+  },
+  codePrefix: 'app'
+}
+
+[debug] [2026-02-09T05:35:34.700Z] Got response code 400; body Failed to generate manifest from function source: Error: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2026-02-09T05:45:49.802Z] File C:\Projet\Uber-eats\backend\functions\firebase.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Projet\\Uber-eats\\backend\\functions\\firebase.json changed, reloading triggers"}}
+[debug] [2026-02-09T05:45:50.815Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-02-09T05:45:56.802Z] > [functions] package.json contents: {
+  "name": "foodflow-functions",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.0",
+    "stripe": "^20.3.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2026-02-09T05:45:56.802Z] Building nodejs source
+[debug] [2026-02-09T05:45:56.803Z] Failed to find version of module node: reached end of search path C:\Projet\Uber-eats\backend\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "24". Using node@24 from host. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-02-09T05:45:56.807Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-02-09T05:45:56.821Z] Found firebase-functions binary at 'C:\Projet\Uber-eats\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8328
+
+[error] FirebaseAppError: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+    at AppStore.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\lifecycle.js:41:23)
+    at FirebaseNamespaceInternals.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:43:35)
+    at FirebaseNamespace.initializeApp (C:\Projet\Uber-eats\backend\functions\node_modules\firebase-admin\lib\app\firebase-namespace.js:246:30)
+    at Object.<anonymous> (C:\Projet\Uber-eats\backend\functions\lib\concurrency_controller.js:8:7)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24) {
+  errorInfo: {
+    code: 'app/duplicate-app',
+    message: 'The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.'
+  },
+  codePrefix: 'app'
+}
+
+[debug] [2026-02-09T05:46:00.070Z] Got response code 400; body Failed to generate manifest from function source: Error: The default Firebase app already exists. This means you called initializeApp() more than once without providing an app name as the second argument. In most cases you only need to call initializeApp() once. But if you do want to initialize multiple apps, pass a second argument to initializeApp() to give each app a unique name.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}

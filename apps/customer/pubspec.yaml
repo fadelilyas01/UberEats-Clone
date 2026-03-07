@@ -1,0 +1,30 @@
+name: customer
+description: FoodFlow Pro - Premium Food Delivery
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  firebase_core: ^2.27.0
+  cloud_firestore: ^4.15.8
+  firebase_auth: ^4.17.8
+  go_router: ^12.1.0
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.3.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  flutter_stripe: ^10.1.1
+  cloud_functions: ^4.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true

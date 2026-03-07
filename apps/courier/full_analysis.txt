@@ -1,0 +1,30 @@
+﻿Analyzing courier...                                            
+
+   info - Don't invoke 'print' in production code - lib\core\services\notification_service.dart:146:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\notification_service.dart:154:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\notification_service.dart:163:3 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\notification_service.dart:170:3 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\delivery\presentation\active_delivery_screen.dart:31:200 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\delivery\presentation\active_delivery_screen.dart:90:149 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\earnings\presentation\earnings_screen.dart:145:68 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\mission\presentation\offer_screen.dart:121:98 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:69:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:69:94 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\main.dart:144:100 - deprecated_member_use
+
+flutter : 11 issues found. 
+(ran in 5.3s)
+Au caractère Ligne:1 : 1
++ flutter analyze --no-pub 
+2>&1 | Out-File -FilePath 
+full_analysis.txt  ...
++ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (11 issu  
+  es found. (ran in 5.3s):   
+ String) [], RemoteExcept    
+ion
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 

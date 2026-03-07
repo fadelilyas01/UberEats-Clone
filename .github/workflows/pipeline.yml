@@ -1,0 +1,57 @@
+name: FoodFlow Pro CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # 1. Backend Validation
+  backend-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend/functions
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint & Build
+        run: |
+          npm run lint
+          npm run build
+
+  # 2. Key Mobile App Validation (Flutter)
+  mobile-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Analyze Code
+        run: flutter analyze
+      - name: Run Unit Tests
+        run: flutter test
+
+  # 3. Deploy to Firebase (Only on Merge to Main)
+  deploy-firebase:
+    needs: [backend-check, mobile-test]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Firebase Tools
+        run: npm install -g firebase-tools
+      - name: Deploy Functions & Security Rules
+        run: firebase deploy --only functions,firestore,storage
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
