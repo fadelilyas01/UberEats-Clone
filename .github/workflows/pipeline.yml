@@ -46,7 +46,7 @@ jobs:
       - name: Analyze Code
         run: flutter analyze --no-fatal-warnings
       - name: Run Unit Tests
-        run: flutter test
+        run: flutter test --no-pub -v
 
   # 3. Deploy to Firebase (Only on Merge to Main)
   deploy-firebase:
