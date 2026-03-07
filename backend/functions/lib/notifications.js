@@ -124,7 +124,7 @@ async function sendNotification(token, payload) {
         // Handle invalid tokens (user uninstalled app, etc)
         if (error.code === 'messaging/invalid-registration-token' ||
             error.code === 'messaging/registration-token-not-registered') {
-            console.warn(`⚠️ Invalid token, should be removed from DB`);
+            console.warn('⚠️ Invalid token, should be removed from DB');
         }
         else {
             console.error('❌ FCM send error:', error);

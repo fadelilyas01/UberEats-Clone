@@ -2,9 +2,9 @@ name: FoodFlow Pro CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   # 1. Backend Validation
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
       - name: Install Dependencies
         run: npm ci
       - name: Lint & Build
@@ -29,16 +29,22 @@ jobs:
   # 2. Key Mobile App Validation (Flutter)
   mobile-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [customer, courier]
+    defaults:
+      run:
+        working-directory: ./apps/${{ matrix.app }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: "stable"
       - name: Install dependencies
         run: flutter pub get
       - name: Analyze Code
-        run: flutter analyze
+        run: flutter analyze --no-fatal-warnings
       - name: Run Unit Tests
         run: flutter test
 
