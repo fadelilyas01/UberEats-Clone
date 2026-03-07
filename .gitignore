@@ -1,12 +1,33 @@
-# Monorepo Root Ignores
-node_modules/
-.idea/
-.vscode/
+# General
+.DS_Store
+*.log
 *.swp
 *.swo
-.DS_Store
 
-# Temporary setup scripts and logs
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Node
+node_modules/
+
+# Firebase
+.firebase/
+
+# Build and Temp
 setup.log
 setup2.log
 setup.bat
+build/
+.dart_tool/
+
+# Secrets
+.env
+.env.*
+service-account.json
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
