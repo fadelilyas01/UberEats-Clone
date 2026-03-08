@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: "18"
       - name: Install Dependencies
-        run: npm ci
+        run: npm install # Using install instead of ci for better flexibility
       - name: Lint & Build
         run: |
           npm run lint
@@ -40,7 +40,12 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
+          flutter-version: "3.16.0" # Pinning version for stability
           channel: "stable"
+      - name: Environment Diagnostics
+        run: |
+          flutter --version
+          dart --version
       - name: Install dependencies
         run: flutter pub get
       - name: Analyze Code
